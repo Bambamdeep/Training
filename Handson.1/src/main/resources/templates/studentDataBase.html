@@ -1,0 +1,38 @@
+<html>
+<body>
+		<div align="left">
+			<h2 style="color:brown" align="center">Exam Form</h2>
+			
+		<form th:action="@{/submit}" th:object="${student}">
+			<table align="center">
+				<tr>
+					<td>Enter Your Id</td>
+                    <td><input type="text" name="StudentId" th:field="*{sId}" ></td>
+				</tr>
+				<tr>
+					<td>Enter Your Name</td>
+                    <td><input type="text" name="Name" th:field="*{name}"></td>
+				</tr>
+				<tr>
+					<td>Enter Your Standard</td>
+					<td><input type="text" name="Standard" th:field="*{standard}"></td>
+				</tr>
+				<tr>
+					<td>Enter Your Section</td>
+					<td><input type="text" name="section" th:field="*{section}"></td>
+				</tr>
+				<tr>
+					<td>Enter School Name</td>
+					<td><input type="text" name="SchoolName" th:field="*{schoolName}"></td>
+				</tr>
+				<tr>
+					<td>Enter Contact</td>
+					<td><input type="text" name="phone" th:field="*{phone}"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+				</table>
+</body>
+</html>
